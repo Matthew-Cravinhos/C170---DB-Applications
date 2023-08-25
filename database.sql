@@ -90,3 +90,42 @@ CREATE VIEW full_name AS
 
 
 -- step b4
+
+
+CREATE INDEX coffee_names on Coffee(coffee_name)
+
+-- for the screenshot, refer to the documentation in templates guide for EXPLAIN command
+
+
+-- step b5
+
+
+SELECT
+    first_name,
+    last_name
+FROM
+    Employee
+WHERE
+    first_name = 'Peter' AND
+    last_name = 'Parker';
+
+
+-- step b6
+
+-- depending on output, tinker with the ID values in the first section
+
+SELECT 
+    Coffee_Shop.shop_name,
+    Coffee_Shop.city,
+    Coffee_Shop.state,
+    Employee.first_name,
+    Employee.last_name,
+    Employee.job_title,
+    Coffee.coffee_name,
+    Coffee.price_per_pound
+FROM 
+    Coffee_Shop
+INNER JOIN 
+    Employee ON Coffee_Shop.shop_id = Employee.shop_id
+INNER JOIN 
+    Coffee ON Coffee_Shop.shop_id = Coffee.shop_id;
