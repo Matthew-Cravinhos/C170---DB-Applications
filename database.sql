@@ -36,7 +36,7 @@ CREATE TABLE Coffee (
     shop_id INT,
     supplier_id INT,
     coffee_name VARCHAR(30),
-    price_per_pound NUMERIC(5,2)
+    price_per_pound NUMERIC(5,2),
     PRIMARY KEY (coffee_id),
     FOREIGN KEY (shop_id) REFERENCES Coffee_Shop (shop_id),
     FOREIGN KEY (supplier_id) REFERENCES Supplier (supplier_id)
