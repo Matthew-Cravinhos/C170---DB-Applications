@@ -60,9 +60,9 @@ VALUES
 
 INSERT INTO Employee(employee_id,first_name,last_name,hire_date,job_title,shop_id)
 VALUES
-    (7,"Bruce","Wayne",2008-11-11,"Night Roaster", 17),
-    (8,"Tony","Stark",2010-07-15,"Iron Barista", 18),
-    (9,"Peter","Parker",2014-04-18,"Spider Manager", 19);
+    (7,"Bruce","Wayne","2008-11-11","Night Roaster", 17),
+    (8,"Tony","Stark","2010-07-15","Iron Barista", 18),
+    (9,"Peter","Parker","2014-04-18","Spider Manager", 19);
 
 INSERT INTO Coffee(coffee_id,shop_id,supplier_id,coffee_name,price_per_pound)
 VALUES
