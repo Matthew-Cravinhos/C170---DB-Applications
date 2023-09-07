@@ -46,8 +46,6 @@ CREATE TABLE Coffee (
 -- step B2
 
 
--- using multi-line value inserts, not sure if UPDATE is needed in some form
-
 INSERT INTO Coffee_Shop(shop_id,shop_name,city,state)
 VALUES
     (1,"Houndstooth Coffee","Austin","TX"),
@@ -111,8 +109,6 @@ WHERE
 
 
 -- step b6
-
--- depending on output, tinker with the ID values in the first section
 
 SELECT 
     Coffee_Shop.shop_name,
