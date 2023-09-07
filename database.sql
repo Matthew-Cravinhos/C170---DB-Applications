@@ -90,7 +90,7 @@ CREATE VIEW full_name AS
 -- step b4
 
 
-CREATE INDEX coffee_names on Coffee(coffee_name)
+CREATE INDEX coffee_names on Coffee(coffee_name);
 
 -- for the screenshot, refer to the documentation in templates guide for EXPLAIN command
 
